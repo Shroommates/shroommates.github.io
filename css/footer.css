@@ -1,15 +1,14 @@
 .footer{
     padding:48px 12px;
-    background-color:var(--seesan);
+    background-color:var(--text);
     text-align:center
 }
 a.otherLinks{
     margin:2%;
-    color:var(--arc-blue);
+    color:var(--background);
     text-decoration:none
 }
 .footer p{
     margin-top:32px;
     margin-bottom:0
 }
- 

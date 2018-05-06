@@ -1,7 +1,7 @@
 .anchor {
     display: block;
     position: relative;
-    top: -61px;
+    top: -32px;
     visibility: hidden
 }
 
@@ -35,9 +35,11 @@
     margin: 1em auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 2em;
 }
 
 .portrait-text {
+    width: 90%;
     text-align: center;
     transition: .5s ease;
     color: white;
@@ -85,15 +87,48 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .section-title {
+        padding: 1em 0;
+    }
     .section {
-        width: 100%;
-        margin-left: 4px;
-        margin-right: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
+        width: auto;
     }
     .section-grid {
+        width: 100%;
         grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     }
     .team-member {
         height: 200px;
     }
+}
+
+.screenshot {
+    transition: 0.5s ease;
+    min-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screenshot:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2em rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .screenshot:hover {
+        transform: scale(1);
+        box-shadow: 0 0 2em rgba(255, 255, 255, 0);
+        z-index: 1;
+    }
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    display: block;
 }

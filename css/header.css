@@ -1,72 +1,95 @@
-#navbar,.nav-links{
-    font-family:Comfortaa,sans-serif;
-    color:var(--text)
-}
-#navbar,.sticky{
-    position:fixed;
-    top:0
-}
-#navbar{
-    overflow:hidden;
-    background-color:var(--background);
-    width:100%;
-    text-align:center;
-    box-shadow:0 18px 35px rgba(50,50,93,.15),0 5px 15px rgba(0,0,0,.105)
-}
-.header-name,.nav-links{
-    white-space:nowrap;
-    width:15%;
-    transition:color .3s;
-    padding:16px 12px 12px
-}
-.nav-links{
-    display:inline-block;
-    text-decoration:none;
-    font-size:1.2em
-}
-.nav-links:hover{
-    color: white;
-    text-shadow:0 0 12px white
-}
-.icon{
-    display:none
-}
-.header-name{
-    letter-spacing:1px;
-    margin:0;
-    display:inline-block;
-    font-size:2em;
-    line-height:1
-}
-.sticky{
-    width:100%
-}
-.header-name:hover{
-    cursor:default
+#navbar, .nav-links {
+    font-family: Comfortaa, sans-serif;
+    color: var(--text)
 }
 
-@media screen and (max-width:1280px){
-    .header-name,.nav-links{
-        display:none
+#navbar, .sticky {
+    position: fixed;
+    top: 0
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: var(--background);
+    width: 100%;
+    text-align: right;
+    box-shadow: 0 18px 35px rgba(50, 50, 93, .15), 0 5px 15px rgba(0, 0, 0, .105)
+}
+
+.nav-container {
+    margin-right: 8em;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-container {
+        margin-right: 0;
     }
-    a.icon{
-        float:right;
-        display:block
+}
+
+.header-name, .nav-links {
+    white-space: nowrap;
+    width: auto;
+    transition: color .3s;
+    padding: 16px 12px 12px
+}
+
+.nav-links {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2em
+}
+
+.logo {
+    text-decoration: none;
+    position: absolute;
+    margin-left: 8em;
+    left: 0;
+}
+
+.nav-links:hover {
+    color: white;
+    text-shadow: 0 0 12px white
+}
+
+.icon {
+    display: none
+}
+
+.header-name {
+    color: var(--text);
+    letter-spacing: 1px;
+    margin: 0;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 1
+}
+
+.sticky {
+    width: 100%
+}
+
+@media screen and (max-width:1000px) {
+    .header-name, .nav-links {
+        display: none
     }
-    .nav-links{
-        width:auto
+    a.icon {
+        float: right;
+        display: block
     }
-    #navbar.responsive{
-        width:100%
+    .nav-links {
+        width: auto
     }
-    #navbar.responsive a.icon{
-        position:absolute;
-        right:0;
-        top:0
+    #navbar.responsive {
+        width: 100%
     }
-    #navbar.responsive a{
-        float:none;
-        display:block;
-        text-align:left
+    #navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    #navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left
     }
 }

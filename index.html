@@ -12,30 +12,38 @@
   <div>
     <button onclick="toTop()" id="to-top" title="Go to top">Top</button>
   </div>
-  <!-- <div id="navbar" style="z-index: 9999">
-    <a class="nav-links" href="#" onclick="closeMenu()">HOME</a>
-    <a class="nav-links" href="#about" onclick="closeMenu()">ABOUT</a>
-    <h2 class="header-name" onclick="closeMenu()">Shroommates</h2>
-    <a class="nav-links" href="#members" onclick="closeMenu()">THE TEAM</a>
-    <a class="nav-links" href="#screenshots" onclick="closeMenu()">SCREENSHOTS</a>
-  </div> -->
+  <div id="navbar" style="z-index: 9999">
+    <div class="nav-container">
+      <a class="logo" href="#" onclick="closeMenu()">
+        <h2 class="header-name" onclick="closeMenu()">Shroommates</h2>
+      </a>
+      <a class="nav-links" href="#about" onclick="closeMenu()">ABOUT</a>
+      <a class="nav-links" href="#team" onclick="closeMenu()">THE TEAM</a>
+      <a class="nav-links" href="#screenshots" onclick="closeMenu()">SCREENSHOTS</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="nav-links icon" onclick="toggleMenu()">&#9776;</a>
+    </div>
+  </div>
 
   <div id="banner" onclick="closeMenu()">
     <h1 id="intro" class="intro">Shroommates</h1>
   </div>
 
   <div id="contents">
-    <div id="about">
+    <div id="about" class="anchor"></div>
+    <div id="about-actual">
       <div class="section-title">
         <h2>About</h2>
       </div>
       <div class="section">
-        Shroommates is a third-person platformer where players play as a sentient mushroom trying to grow in secret in a UCSC student's apartment. The mushroom can grow by consuming food at staying out of direct sunlight. Players must adapt to different sizes,
-        as size dynamically alters speed, hiding ability, and places you can get to. Complete objectives while trying to keep out of sight off the AI human!
+        Shroommates is a third-person platformer where players play as a sentient mushroom trying to return to his family.
+        Jump, glide, run, and collect items around the house while completing various objectives from room to room!
+        Make sure to avoid the humans!
+        Will you be able to find the deed to the house and kick out the humans?
       </div>
     </div>
     <hr style="margin: 0 4em; border-color: var(--text)" />
-    <div id="team">
+    <div id="team" class="anchor"></div>
+    <div id="team-actual">
       <div class="section-title">
         <h2>The Team</h2>
       </div>
@@ -147,14 +155,49 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="footer" onclick="closeMenu()">
-    <a class="otherLinks" href="#">Facebook</a>
-    <a class="otherLinks" href="#">Instagram</a>
-    <a class="otherLinks" href="#">Twitter</a>
-    <p style="color: var(--silver-wings)">&copy; 2018 Shroommates</p>
+    <hr style="margin: 0 4em; border-color: var(--text)" />
+    <div id="screenshots" class="anchor"></div>
+    <div id="screenshots-actual">
+        <div class="section-title">
+          <h2>Screenshots</h2>
+        </div>
+        <div class="section-grid"">
+          <div class="screenshot">
+            <img class="image" src="/img/art/bathroom.png" />
+          </div>
+          <div class="screenshot">
+            <img class="image" src="/img/art/hallway.png" />
+          </div>
+          <div class="screenshot">
+            <img class="image" src="/img/art/kitchen.png" />
+          </div>
+          <div class="screenshot">
+            <img class="image" src="/img/art/kitchen_2.png" />
+          </div>
+          <div class="screenshot">
+            <img class="image" src="/img/art/living.png" />
+          </div>
+          <div class="screenshot">
+            <img class="image" src="/img/art/living_2.png" />
+          </div>
+          <div class="screenshot">
+            <img class="image" src="/img/art/living_3.png" />
+          </div>
+          <div class="screenshot">
+            <img class="image" src="/img/art/plants.png" />
+          </div>
+          <div class="screenshot">
+            <img class="image" src="/img/art/room.png" />
+          </div>
+        </div>
+    </div>
+    <div class="footer" onclick="closeMenu()">
+      <a class="otherLinks" href="#">Facebook</a>
+      <a class="otherLinks" href="#">Instagram</a>
+      <a class="otherLinks" href="#">Twitter</a>
+      <p style="color: var(--silver-wings)">&copy; 2018 Shroommates</p>
+    </div>
   </div>
 </body>
-
+<script type='text/javascript' src='/js/scroll.js'></script>
 </html>

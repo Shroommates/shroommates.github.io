@@ -33,7 +33,7 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 60vh;
-    background: url(../img/sm_living_blur.png) center center no-repeat fixed;
+    background: url(/img/sm_living_blur.png) center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -172,30 +172,9 @@ body {
     border: none;
     outline: 0;
     opacity: .7;
-    background: var(--dim-shadow);
-    color: var(--silver-wings);
+    background: var(--text);
+    color: var(--background);
     cursor: pointer;
     padding: 12px;
     border-radius: 4px
-}
-
-#slider {
-    width: 50%;
-    height: auto;
-    transition: opacity .75s;
-    border-radius: 10px
-}
-
-#slider.fadeOut {
-    opacity: 0
-}
-
-@media screen and (max-width:1280px) {
-    #slider {
-        width: 100%
-    }
-}
-
-li {
-    line-height: 1.5
 }
