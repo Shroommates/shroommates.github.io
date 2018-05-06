@@ -1,6 +1,6 @@
 #navbar,.nav-links{
     font-family:Comfortaa,sans-serif;
-    color:var(--silver-wings)
+    color:var(--text)
 }
 #navbar,.sticky{
     position:fixed;
@@ -8,7 +8,7 @@
 }
 #navbar{
     overflow:hidden;
-    background-color:var(--seesan);
+    background-color:var(--background);
     width:100%;
     text-align:center;
     box-shadow:0 18px 35px rgba(50,50,93,.15),0 5px 15px rgba(0,0,0,.105)
@@ -25,8 +25,8 @@
     font-size:1.2em
 }
 .nav-links:hover{
-    color:var(--tracer);
-    text-shadow:0 0 12px var(--tracer)
+    color: white;
+    text-shadow:0 0 12px white
 }
 .icon{
     display:none

@@ -12,205 +12,140 @@
   <div>
     <button onclick="toTop()" id="to-top" title="Go to top">Top</button>
   </div>
-  <div id="navbar" style="z-index: 9999">
-    <a class="nav-links" href="#" onclick="closeMenu()">Home</a>
-    <a class="nav-links" href="#about" onclick="closeMenu()">About</a>
+  <!-- <div id="navbar" style="z-index: 9999">
+    <a class="nav-links" href="#" onclick="closeMenu()">HOME</a>
+    <a class="nav-links" href="#about" onclick="closeMenu()">ABOUT</a>
     <h2 class="header-name" onclick="closeMenu()">Shroommates</h2>
-    <a class="nav-links" href="#members" onclick="closeMenu()">Members</a>
-    <a class="nav-links" href="#screenshots" onclick="closeMenu()">Screenshots & Footage</a>
-  </div>
+    <a class="nav-links" href="#members" onclick="closeMenu()">THE TEAM</a>
+    <a class="nav-links" href="#screenshots" onclick="closeMenu()">SCREENSHOTS</a>
+  </div> -->
+
   <div id="banner" onclick="closeMenu()">
     <h1 id="intro" class="intro">Shroommates</h1>
   </div>
 
-  <div id="about" class="anchor"></div>
-  <div id="engineering-projects-actual" class="section-title">
-    <h2>About</h2></div>
-  <div class="section section-grid">
-    <!-- ABOUT BEGIN -->
-    <div id="shroommates" class="card overlay" onclick="openModal(this)">
-      <img class="card-image1" src="img/landing.png" />
-      <div class="card-container">
-        <h4 class="project-title">Shroommates</h4>
-        <p class="project-note">&mdash; Made with Unreal Engine</p>
-        <p><i></i></p>
+  <div id="contents">
+    <div id="about">
+      <div class="section-title">
+        <h2>About</h2>
+      </div>
+      <div class="section">
+        Shroommates is a third-person platformer where players play as a sentient mushroom trying to grow in secret in a UCSC student's apartment. The mushroom can grow by consuming food at staying out of direct sunlight. Players must adapt to different sizes,
+        as size dynamically alters speed, hiding ability, and places you can get to. Complete objectives while trying to keep out of sight off the AI human!
       </div>
     </div>
-    <div id="shroommates-modal" class="modal">
-      <div class="modal-content">
-        <span id="shroommates-close" class="close">&times;</span>
-        <div class="project-header">
-          <h2 class="project-title">Shroommates | Made with Unreal Engine</h2>
-          <p><i></i></p>
+    <hr style="margin: 0 4em; border-color: var(--text)" />
+    <div id="team">
+      <div class="section-title">
+        <h2>The Team</h2>
+      </div>
+      <div class="section-grid">
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Advait.jpg" />
+          <div class="portrait-text">
+            <h2>Advait Ahir</h2>
+            <p>UI Programmer, Sound Effect Artist</p>
+          </div>
         </div>
-        <div class="project-entry">
-          <p>
-            1 player stealth-based action PC game made using Unreal Engine. Play as a sentient mushroom trying to grow in secret! Will you find peace and harmony with Jared the roommate? Conceal yourself from him and explore the house. Will Jared have a change of
-            heart? Can your acts of benevolence persuade the roommate to let you live alongside him?
-          </p>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Charisse.jpg" />
+          <div class="portrait-text">
+            <h2>Charisse Lo</h2>
+            <p>Artist Coordinator, 2D Artist</p>
+          </div>
         </div>
-        <div style="text-align: center">
-          <span id="shroommates-close-btn" class="close-btn">Close</span>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Courtney.jpg" />
+          <div class="portrait-text">
+            <h2>Courtney Chavez</h2>
+            <p>Lead Designer, 2D/3D Artist</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Eisaku.jpg" />
+          <div class="portrait-text">
+            <h2>Eisaku Imura</h2>
+            <p>Lead Test, Gameplay Programmer (Items), Level Designer</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Ian.jpg" />
+          <div class="portrait-text">
+            <h2>Ian Carlton</h2>
+            <p>Composer</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Jacob.jpg" />
+          <div class="portrait-text">
+            <h2>Jacob Darby</h2>
+            <p>Composer</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Jake.jpg" />
+          <div class="portrait-text">
+            <h2>Jake Shapiro</h2></h2>
+            <p>AI Programmer</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Jeffrey.jpg" />
+          <div class="portrait-text">
+            <h2>Jeffrey Hui</h2>
+            <p>User Test Coordinator, Gameplay Programmer (Menus)</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Jennifer.jpg" />
+          <div class="portrait-text">
+            <h2>Jennifer Bermeo</h2>
+            <p>Lead Producer, 2D/3D Art</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Jessica.jpeg" />
+          <div class="portrait-text">
+            <h2>Jessica both 3d modeling!</h2>
+            <p>Artist</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Joann.jpg" />
+          <div class="portrait-text">
+            <h2>Joann both 3d modeling!</h2>
+            <p>3D Modeler</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Nicholas.jpg" />
+          <div class="portrait-text">
+            <h2>Nicholas Ho</h2>
+            <p>Gameplay Programmer (Character)</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Richard.jpg" />
+          <div class="portrait-text">
+            <h2>Richard Harker</h2>
+            <p>Gameplay Programmer (Animations, Camera)</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Ryan.jpg" />
+          <div class="portrait-text">
+            <h2>Ryan Shee</h2>
+            <p>Lead Developer, Gameplay Programmer (Dialog)</p>
+          </div>
+        </div>
+        <div class="team-member">
+          <img class="portraits" src="/img/people/Sean.jpg" />
+          <div class="portrait-text">
+            <h2>Sean Woods</h2>
+            <p>Co-Producer</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- ABOUT END -->
-  </div>
-
-  <div id="members" class="anchor"></div>
-  <div id="game-projects-actual" class="section-title">
-    <h2>Members</h2>
-  </div>
-  <div class="section section-grid">
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Advait.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Advait Ahir</h4>
-        <p class="project-note">&mdash; Programmer & SFX Artist</p>
-      </div>
-    </div>
-
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Charisse.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Charisse Lo</h4>
-        <p class="project-note">&mdash; Artist Coordinator & 2D Art</p>
-      </div>
-    </div>
-
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Courtney.JPG" />
-      <div class="card-container">
-        <h4 class="project-title">Courtney Chavez</h4>
-        <p class="project-note">&mdash; Lead Designer & 2D/3D Art</p>
-      </div>
-    </div>
-
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Eisaku.JPG" />
-      <div class="card-container">
-        <h4 class="project-title">Eisaku Imura</h4>
-        <p class="project-note">&mdash; Lead Tester, Programmer, Level Designer</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Ian.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Ian Carlton</h4>
-        <p class="project-note">&mdash; Music</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Jacob.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Jacob Darby</h4>
-        <p class="project-note">&mdash; Music</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Jake.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Jake Shapiro</h4>
-        <p class="project-note">&mdash; Programmer</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Jeffrey.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Jeffrey Hui</h4>
-        <p class="project-note">&mdash; Programmer, User Test Coordinator</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Jennifer.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Jennifer Bermeo</h4>
-        <p class="project-note">&mdash; Lead Producer, 2D/3D Art</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Jessica.jpeg" />
-      <div class="card-container">
-        <h4 class="project-title">Jessica Wong</h4>
-        <p class="project-note">&mdash; Art</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Joann.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Joann Long</h4>
-        <p class="project-note">&mdash; Art</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Nicholas.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Nicholas Ho</h4>
-        <p class="project-note">&mdash; Programmer</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Richard.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Richard Harker</h4>
-        <p class="project-note">&mdash; Programmer, Camera, Animation</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Ryan.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Ryan Shee</h4>
-        <p class="project-note">&mdash; Lead Developer</p>
-      </div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image" src="img/people/Sean.jpg" />
-      <div class="card-container">
-        <h4 class="project-title">Sean Woods</h4>
-        <p class="project-note">&mdash; Co-Producer</p>
-      </div>
-    </div>
-  </div>
-  <div id="screenshots" class="anchor"></div>
-  <div id="game-projects-actual" class="section-title">
-    <h2>Art Gallery & Footage</h2>
-  </div>
-  <div class="section section-grid">
-    <div id="shroommates" class="card overlay">
-      <img class="card-image1" src="img/art/bathroom.png" />
-      <div class="card-container"></div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image1" src="img/art/hallway.png" />
-      <div class="card-container"></div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image1" src="img/art/kitchen.png" />
-      <div class="card-container"></div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image1" src="img/art/kitchen_2.png" />
-      <div class="card-container"></div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image1" src="img/art/living.png" />
-      <div class="card-container"></div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image1" src="img/art/living_2.png" />
-      <div class="card-container"></div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image1" src="img/art/living_3.png" />
-      <div class="card-container"></div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image1" src="img/art/plants.png" />
-      <div class="card-container"></div>
-    </div>
-    <div id="shroommates" class="card overlay">
-      <img class="card-image1" src="img/art/room.png" />
-      <div class="card-container"></div>
     </div>
   </div>
 
@@ -218,13 +153,8 @@
     <a class="otherLinks" href="#">Facebook</a>
     <a class="otherLinks" href="#">Instagram</a>
     <a class="otherLinks" href="#">Twitter</a>
-    <a class="otherLinks" href="#">shroommates@yahoo.com</a>
     <p style="color: var(--silver-wings)">&copy; 2018 Shroommates</p>
   </div>
 </body>
-<script type='text/javascript' src='js/cardHover.js'></script>
-<script type='text/javascript' src='js/modal.js'></script>
-<script type='text/javascript' src='js/scroll.js'></script>
-<script type='text/javascript' src='js/aboutSlideshow.js'></script>
 
 </html>
