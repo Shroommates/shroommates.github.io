@@ -1,0 +1,15 @@
+.footer{
+    padding:48px 12px;
+    background-color:var(--seesan);
+    text-align:center
+}
+a.otherLinks{
+    margin:2%;
+    color:var(--arc-blue);
+    text-decoration:none
+}
+.footer p{
+    margin-top:32px;
+    margin-bottom:0
+}
+ 

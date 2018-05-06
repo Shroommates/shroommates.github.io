@@ -1,0 +1,228 @@
+@import url(colors.css);
+ @import url(header.css);
+ @import url(projects.css);
+ @import url(modal.css);
+ @import url(footer.css);
+ #slider, #to-top:hover{
+    opacity:1
+}
+ html{
+    scroll-behavior:smooth
+}
+ body{
+    font-family:'Open Sans',sans-serif;
+    height:100%;
+    margin:0;
+    color:#000;
+    background-color:var(--offwhite);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    line-height:1.75;
+    overflow-wrap:break-word;
+    overflow-x:hidden
+}
+.intro,.section-title h2{
+    font-family:Comfortaa,sans-serif;
+    text-shadow:0 0 18px #000
+}
+#banner{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    height:100vh;
+     background:url(../img/landing.png) center center no-repeat fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    text-align:center
+}
+.intro{
+    letter-spacing:1px;
+    margin-bottom:.25em;
+    line-height:1.25;
+    font-size:3em;
+    color:var(--tracer);
+    -webkit-animation:fadein 2s;
+    -moz-animation:fadein 2s;
+    -ms-animation:fadein 2s;
+    -o-animation:fadein 2s;
+    animation:fadein 2s
+}
+@keyframes fadein{
+    from{
+        opacity:0;
+        letter-spacing:0
+    }
+    to{
+        opacity:1;
+        letter-spacing:1px
+    }
+}
+@-moz-keyframes fadein{
+    from{
+        opacity:0;
+        letter-spacing:0
+    }
+    to{
+        opacity:1;
+        letter-spacing:1px
+    }
+}
+@-webkit-keyframes fadein{
+    from{
+        opacity:0;
+        letter-spacing:0
+    }
+    to{
+        opacity:1;
+        letter-spacing:1px
+    }
+}
+@-ms-keyframes fadein{
+    from{
+        opacity:0;
+        letter-spacing:0
+    }
+    to{
+        opacity:1;
+        letter-spacing:1px
+    }
+}
+@-o-keyframes fadein{
+    from{
+        opacity:0;
+        letter-spacing:0
+    }
+    to{
+        opacity:1;
+        letter-spacing:1px
+    }
+}
+.pitch{
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+    color:var(--silver-wings);
+    -webkit-animation:2s ease 0s normal forwards 1 fadein2;
+    animation:2s ease 0s normal forwards 1 fadein2;
+    text-shadow:0 0 12px #000
+}
+@keyframes fadein2{
+    0%,50%{
+        opacity:0
+    }
+    100%{
+        opacity:1
+    }
+}
+@-webkit-keyframes fadein2{
+    0%,50%{
+        opacity:0
+    }
+    100%{
+        opacity:1
+    }
+}
+@media screen and (max-width:1280px){
+    .pitch{
+        width:auto;
+        margin:0 16px
+    }
+}
+#contents{
+    background-color:var(--off-white)
+}
+.anchor{
+    display:block;
+    position:relative;
+    top:-61px;
+    visibility:hidden
+}
+.section-title{
+    padding:1em 11em;
+    text-align:center;
+    background-color:var(--seesan)
+}
+.section-title h2{
+    margin:0;
+    padding-top:4px;
+    font-size:2em;
+    color:var(--tracer);
+    text-shadow:0 0 48px rgba(249,158,26,.5)
+}
+.section{
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:2em 0
+}
+.section p{
+    line-height:1.5
+}
+.section-grid{
+    padding:2em 8em;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(20em,1fr));
+    grid-gap:1em
+}
+@media screen and (max-width:1280px){
+    .anchor{
+        top:-50px
+    }
+    .section{
+        width:auto;
+        padding:.5em;
+        margin:0
+    }
+    .section-grid{
+        grid-template-columns:repeat(auto-fit,100%)
+    }
+    .section-title{
+        padding:0
+    }
+}
+.small-link{
+    color:var(--arc-blue);
+    text-decoration:none
+}
+.small-link:hover{
+    text-decoration:underline
+}
+::-webkit-scrollbar{
+    display:none
+}
+#to-top{
+    display:none;
+    position:fixed;
+    bottom:16px;
+    right:16px;
+    z-index:99;
+    font-size:14px;
+    border:none;
+    outline:0;
+    opacity:.7;
+    background:var(--dim-shadow);
+    color:var(--silver-wings);
+    cursor:pointer;
+    padding:12px;
+    border-radius:4px
+}
+#slider{
+    width:50%;
+    height:auto;
+    transition:opacity .75s;
+    border-radius:10px
+}
+#slider.fadeOut{
+    opacity:0
+}
+@media screen and (max-width:1280px){
+    #slider{
+        width:100%
+    }
+}
+li{
+    line-height:1.5
+}
+ 
